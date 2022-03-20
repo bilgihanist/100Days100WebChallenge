@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;00;600;700&display=swap');
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #b7bac5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0rem 3.5rem;
+    color: white;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    width: 20%;
+}
+
+header h2 span {
+    margin-left: 1rem;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+form.search {
+    width: 780px;
+    background: white;
+}
+
+form.search input,
+form.search button {
+    height: 46px;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+form.search input {
+    width: 90%;
+    padding: 0rem 1rem;
+}
+
+form.search button {
+    width: 9%;
+}
+
+header a {
+    color: #6a6b6d;
+    font-weight: 600;
+}
+
+.carousel {
+    height: 60vh;
+    margin-top: 1rem;
+}
+
+.carousel-item {
+    height: 80%;
+    width: 75%;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 2rem 3rem;
+}
+
+.carousel-item img {
+    width: 50%;
+    height: auto;
+}
+
+.carousel-info {
+    color: #fff;
+    width: 60%;
+    padding: 0rem 2.5rem;
+}
+
+.carousel-image {
+    width: 60%;
+}
+
+.carousel-item:first-child {
+    background: #8995a5;
+}
+
+.carousel-item:nth-child(2) {
+    background: #1daadf;
+}
+
+.carousel-item:nth-child(3) {
+    background: #303133;
+}
+
+.carousel-info h1 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.carousel-info p {
+    line-height: 1.7rem;
+    margin-bottom: 2.5rem;
+}
+
+.carousel-info a {
+    background: #fff;
+    color: #6a6b6d;
+    padding: 1rem 1.3rem;
+    border-radius: 3px;
+}
+
+.flickity-prev-next-button.previous {
+    left: 210px;
+}
+
+.flickity-prev-next-button.next {
+    right: 210px;
+}
+
+.popular {
+    padding: 0rem 3.5rem;
+    margin-bottom: 5rem;
+}
+
+.popular h2 {
+    margin: 3rem 0rem;
+    color: #6a6b6d;
+    font-size: 30px;
+}
+
+.single-item {
+    width: 20%;
+    margin-right: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    color: #6a6b6d;
+}
+
+.single-item .img {
+    height: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.single-item .info {
+    padding: 1rem;
+}
+
+.single-item .info h3,
+.single-item .info p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.item-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price h4 {
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+
+.deals {
+    background: #090b24;
+    color: #fff;
+    padding: 3.5rem 3rem;
+}
+
+.deals-inner {
+    display: grid;
+    grid-template-columns: 21% 79%;
+    grid-gap: 0rem 2rem;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0rem 2rem;
+    text-align: center;
+}
+
+.timer h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.timer h3 {
+    font-size: 1.9rem;
+}
+
+.deals-carousel .single-item {
+    width: 25% !important;
+}
+
+.deals-carousel .flickity-prev-next-button.previous {
+    left: -10px;
+}
+
+.deals-carousel .flickity-prev-next-button.next {
+    right: -10px;
+}
+
+.card-brand {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0rem 3rem;
+}
+
+.single-card {
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 22% 78%;
+    grid-gap: 2rem;
+    color: #6a6b6d;
+    background: #fff;
+}
+
+.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.menu-card {
+    padding: 1rem;
+}
+
+.menu-card a {
+    display: block;
+    color: #6a6b6d;
+}
+
+.menu-card h3 {
+    margin-bottom: .7rem;
+}
