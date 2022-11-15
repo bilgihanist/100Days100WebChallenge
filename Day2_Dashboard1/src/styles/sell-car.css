@@ -1,0 +1,105 @@
+
+.sell__car {
+    margin-top: 100px;
+    padding: 0px 30px;
+    padding-bottom: 50px;
+}
+
+.sell__car-img {
+    padding: 20px;
+    background: var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sell__car-img i {
+    object-fit: cover;
+    width: 70%;
+}
+
+.sell__car-img h2 {
+    color: var(--heading-color);
+    text-align-last: left;
+}
+
+.sell__car-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.tracking__history {
+    padding: 20px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    height: 370px;
+    padding-bottom: 70px;
+    cursor: pointer;
+}
+
+.tracking__history h3 {
+    color: var(--heading-color);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.sell__car-title {
+    margin-bottom: 2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.offer__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2px;
+
+}
+
+.offer__item {
+    padding: 20px;
+    border-radius: 5px;
+    background: var(--primary-color);
+}
+
+.box__01 .client__name {
+    font-size: 1.2rem;
+    color: var(--heading-color);
+    margin-bottom: 10px;
+    font-weight: 400;
+
+}
+.avg__price {
+    color: #ef621c;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    
+}
+
+.avg__price span {
+    color: #ddd;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.market__price {
+    color: #ddd;
+    font-size:0.8rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.arrow__key {
+    width: 50px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ef621c;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}

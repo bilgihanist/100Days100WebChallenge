@@ -3,7 +3,7 @@ import "../styles/dashboard.css";
 import SingleCard from "../components/reuseable/SingleCard";
 import MileChart from "../charts/MileChart";
 import CarStatsChart from "../charts/CarStatsChart";
-import RecommendCarCard from "../UI/RecommendCarCard";
+import RecommendCarCard from "../components/UI/RecommendCarCard";
 import recommendCarsData from '../assets/dummy-data/recommendCars';
 
 const carObj = {

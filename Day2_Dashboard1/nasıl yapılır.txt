@@ -1,0 +1,5 @@
+// npm i recharts remixicon react-router-dom 
+
+//github.com/Remix-Design/remixicon#usage // 
+
+https://fonts.google.com/specimen/DM+Sans?query=dm+sans // fontu aldığımız yer
