@@ -5,6 +5,7 @@ import axios from "../api/axios";
 
 const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/; // küçük büyük ve rakam içeren isim olmalı 3-23 karakter arası olmalı
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/; // küçük büyük rakam ve özel karakter içeren şifre olmalı 8-24 karakter arası olmalı
+const REGISTER_URL = '/register';
 
 const Register = () => {
   const userRef = useRef();
@@ -65,10 +66,26 @@ const Register = () => {
         }
 
         try{
-            const response = await axios.posrt()
+            const response = await axios.post(REGISTER_URL, JSON.stringify({user, pwd}), {
+                headers: { 'Content-Type': 'application/json' },
+                withCredentials: true
+            });
+            console.log(response.data);
+            console.log(response.accessToken);
+            console.log(JSON.stringify(response))
+            setSuccess(true);
+            //clear input fields
+
         }
         catch (err) {
-            
+            if (!err?.response) {
+                setErrMsg('No Server Response');
+            } else if (err.response?.status === 409) {
+                setErrMsg('Username Taken');
+            } else {
+                setErrMsg('Registration FAiled');
+            }
+            errRef.current.focus();
         }
     }
 
