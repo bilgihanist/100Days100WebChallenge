@@ -1,0 +1,15 @@
+base64 encoder/decoder => svg olan bir resmi alfanumeric bir hale getirip solidity'nin anlayacağı hale getirmesi
+tarayıcıda anlaşılacak veri bu şekilde olacaktır;
+=>    data:image/svg+xml;base64,      <=
+sonunda virgül kısmına resmin base64 encode kısımını koyunca çalışıyor.
+
+Things to know before we start coding!
+1.) Abi encode functions for concatenating strings
+2.) Application Binary Interface is the standard way to interact with the contracts in the Ethereum ecosystem.
+3.) abi.encodePacked is a native function that can take any number of strings to concatenate them together into bytes.
+4.)Any arguments we supply to abi.encodePacked must resolve to a string!
+  bytes type
+5.) A group of binary digits - machine-readable code - we can convert back to strings by typecasting.
+
+https://www.youtube.com/watch?v=8FJvY4zXvPE&t=339s&ab_channel=Alchemy
+https://docs.alchemy.com/docs/how-to-make-nfts-with-on-chain-metadata-hardhat-and-javascript
