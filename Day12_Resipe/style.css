@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "young-serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: "outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+
+.recipe {
+  background-color: hsl(30, 54%, 100%);
+  width: 50vw;
+  margin: 5.625rem auto 0.625rem auto;
+  padding: 3.125rem;
+}
+
+img {
+  width: 100%;
+  height: 22rem;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+
+.heading {
+  font-family: "young-serif";
+  font-size: 2.875rem;
+  margin-top: 1.125rem;
+  color: hsl(24, 5%, 18%);
+}
+.paragraph {
+  margin: 1.5rem 0;
+  line-height: 1.8;
+  font-family: "outfit";
+  font-size: 1.125rem;
+  color: hsl(30, 10%, 34%);
+  padding-right: 0.1rem;
+}
+
+.preparation {
+  margin: 1.25rem 0;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 0.625rem;
+  padding: 1.5rem 2.25rem;
+  font-family: "outfit";
+}
+
+.preparation-heading {
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation ul {
+  list-style: none;
+  line-height: 2rem;
+  margin-top: 0.625rem;
+  color: hsl(30, 10%, 34%);
+  font-size: 1.125rem;
+}
+
+.preparation ul b {
+  font-weight: 700;
+  color: hsl(30, 10%, 34%);
+}
+
+.preparation ul li::before {
+  content: "\2022";
+  color: hsl(332, 51%, 32%);
+  font-weight: 900;
+  display: inline-block;
+  margin-left: 0.5rem;
+  width: 2.5rem;
+}
+.ingredients {
+  margin: 1.75rem 0;
+}
+
+.ingredients-heading {
+  font-size: 2rem;
+  color: hsl(14, 45%, 36%);
+  font-family: "young-serif";
+}
+
+.ingredients ul {
+  line-height: 2;
+  margin-top: 0.625rem;
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+  font-family: "outfit";
+  font-size: 1.125rem;
+}
+
+.ingredients ul li {
+  margin-left: 1.5rem;
+}
+
+.ingredients ul li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 900;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.ingredients ul li p {
+  padding: 0 1.125rem;
+}
+
+hr {
+  background-color: hsl(30, 18% 87%);
+  height: 1px;
+  border: none;
+}
+
+.instructions {
+  margin: 1.75rem 0;
+}
+
+.instructions-heading {
+  font-size: 2rem;
+  color: hsl(14, 45%, 36%);
+  font-family: "young-serif";
+}
+
+.instructions ol {
+  line-height: 2;
+  font-family: "outfit";
+  font-size: 1.125rem;
+  color: hsl(30, 10%, 34%);
+  margin-top: 0.625rem;
+}
+
+.instructions ol li {
+  margin-left: 1.5rem;
+}
+
+.instructions ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+  font-size: 1.125rem;
+  display: inline-block;
+}
+
+.instructions ol li p {
+  padding: 0 1.125rem;
+}
+
+.nutrition {
+  margin-top: 1.75rem;
+}
+
+.nutrition-heading {
+  font-size: 2rem;
+  color: hsl(14, 45%, 36%);
+  font-family: "young-serif";
+}
+
+.nutrition-paragraph {
+  font-size: 1.125rem;
+  font-family: "outfit";
+  color: hsl(30, 10%, 34%);
+  margin: 1rem 0;
+}
+
+table {
+  font-size: 1.125rem;
+  font-family: "outfit";
+  color: hsl(30, 10%, 34%);
+  border-collapse: collapse;
+}
+
+table tr:nth-child(-n + 3) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.data {
+  width: 25vw;
+  padding: 1rem 0;
+}
+
+.data:nth-of-type(1) {
+  padding-left: 2.5rem;
+}
+
+.data:nth-of-type(2n) {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+.attribution {
+  height: 5, 625rem;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution span {
+  color: hsl(24, 5%, 18%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: hsl(0, 0%, 100%);
+    overflow-x: hidden;
+  }
+  .recipe {
+    margin: 0;
+    padding: 1.5rem;
+    width: 86vw;
+  }
+  .img {
+    width: 100%;
+    height: 12rem;
+    border-radius: 0;
+    object-fit: cover;
+  }
+  .heading {
+    font-size: 2rem;
+    line-height: 1;
+    margin-top: 2rem;
+  }
+  .paragraph {
+    font-size: 1.15rem;
+  }
+  .preparation-heading {
+    font-size: 1.15rem;
+  }
+  .preparation ul {
+    font-size: 0.98rem;
+  }
+  .preparation ul li::before {
+    width: 1.3rem;
+  }
+  .ingredients-heading {
+    font-size: 1.75rem;
+  }
+  .ingredients ul {
+    font-size: 1rem;
+  }
+  .ingredients ul li::before {
+    width: 1.3rem;
+  }
+
+  .instructions-heading {
+    font-size: 1.75rem;
+  }
+  .instructions ol {
+    font-size: 1rem;
+  }
+  .instructions ol li::marker {
+    font-size: 1rem;
+  }
+  .instructions ol li p {
+    padding: 0 0.75rem;
+  }
+
+  .nutrition-heading {
+    font-size: 1.75rem;
+  }
+  .nutrition-paragraph {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  .table {
+    width: 100%;
+  }
+  .data {
+    font-size: 1rem;
+  }
+
+  .attribution {
+    height: 3rem;
+    font-size: 0.9rem;
+  }
+}
