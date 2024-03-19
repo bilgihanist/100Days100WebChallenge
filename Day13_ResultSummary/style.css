@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+    --Light_red: hsl(0, 100%, 67%);
+    --Orangey_yellow: hsl(39, 100%, 56%);
+    --Green_teal: hsl(166, 100%, 37%);
+    --Cobalt_blue: hsl(234, 85%, 45%);
+
+    --Light_slate_blue_background: hsl(252, 100%, 67%);
+    --Light_royal_blue_background: hsl(241, 81%, 54%);
+
+    --Violet_blue_circle: hsla(256, 72%, 46%, 1);
+    --Persian_blue_circle: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale_blue: hsl(221, 100%, 96%);
+    --Light_lavender: hsl(241, 100%, 89%);
+    --Dark_gray_blue: hsl(224, 30%, 27%);
+
+    --fw_light: 500;
+    --fw_regular: 700;
+    --fw_bold: 800;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--Pale_blue);
+}
+
+.container {
+    background-color: var(--White);
+    display: grid;
+}
+
+.result, .summary {
+    padding: 2.4rem;
+}
+
+.result {
+    text-align: center;
+    display: grid;
+    align-content: start;
+    gap:2rem;
+    color: var(--Light_lavender);
+    background: linear-gradient(var(--Light_slate_blue_background), var(--Light_royal_blue_background));
+    border-radius: 0rem 0rem 2rem 2rem;
+}
+
+.result_title {
+    font-size: 1.5rem;
+}
+
+.result_score {
+    background: linear-gradient(var(--Violet_blue_circle), var(--Persian_blue_circle));
+    display:grid;
+    place-content: center;
+    margin-inline: auto;
+    width: 12.6rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+.result_score span {
+    font-weight: var(--fw_bold);
+    font-size: 4.6rem;
+    color: var(--White);
+}
+
+.result_details {
+    font-size: 1.12rem;
+    color: var(--Light_lavender);
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+.summary {
+    display: grid;
+    align-items: start;
+}
+
+.summary_title {
+    color: var(--Dark_gray_blue);
+}
+.summary_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+}
+.label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.label_score {
+    font-size: 1.1rem;
+    font-weight: var(--fw_regular);
+    color: hsl(224, 30%, 27%, 0.5);
+}
+.label_score span {
+    font-size: 1.1rem;
+    font-weight: var(--fw_bold);
+    color: var(--Dark_gray_blue);
+}
+.label1 {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    border-radius: 0.6rem;
+}
+.label1 .label_title {
+    font-size: 1.1rem;
+    font-weight: var(--fw_regular);
+    color: var(--Light_red);
+}
+.label2 {
+    background-color: hsl(39, 100%, 56%, 0.1);
+    border-radius: 0.6rem;
+}
+.label2 .label_title {
+    font-size: 1.1rem;
+    font-weight: var(--fw_regular);
+    color: var(--Orangey_yellow);
+}
+.label3 {
+    background-color: hsl(166, 100%, 37%, 0.1);
+    border-radius: 0.6rem;
+}
+
+.label3 .label_title {
+    font-size: 1.1rem;
+    font-weight: var(--fw_regular);
+    color: var(--Green_teal);
+}
+
+.label4 {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    border-radius: 0.6rem;
+}
+
+.label4 .label_title {
+    font-size: 1.1rem;
+    font-weight: var(--fw_regular);
+    color: var(--Cobalt_blue);
+}
+
+.btn {
+    font-size: 1.1rem;
+    font-weight: var(--fw_regular);
+    padding: 1rem;
+    color: white;
+    background-color: var(--Dark_gray_blue);
+    border: none;
+    border-radius: 2rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: var(--Light_lavender);
+    background: linear-gradient(var(--Light_slate_blue_background), var(--Light_royal_blue_background));
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen  and (min-width:700px){
+    body {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+    }
+    .container {
+        max-width: 46rem;
+        grid-template-columns: 1fr 1fr ;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin: 1rem;
+        box-shadow: 4px 8px 10px var(--Light_lavender);        
+    }
+    .result {
+        border-radius: 2rem;
+    }
+}
